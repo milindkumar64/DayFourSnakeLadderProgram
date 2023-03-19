@@ -14,7 +14,8 @@ public class SnackLadderGame {
 		    int diceNumber=0;
 	        Random ranNum = new Random(); 
 	        
-	       
+	    while(position<100)
+	    {	  
 	        int playOption = ranNum.nextInt(3);
 	        
 	        if(playOption == NO_PLAY)
@@ -30,7 +31,9 @@ public class SnackLadderGame {
 	        }
 	        if(position<0)
 	        	position = 0;
-	        
+	        if(position>100)
+	        	position=100;
+	    }   
 	        
 	        
 	        System.out.println("Player current position is : "+position);
