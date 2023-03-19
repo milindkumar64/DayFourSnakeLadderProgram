@@ -31,8 +31,11 @@ public class SnackLadderGame {
 	        }
 	        if(position<0)
 	        	position = 0;
+	        if(position==100)
+	        	break;
 	        if(position>100)
-	        	position=100;
+	        	position=position-diceNumber;
+	        System.out.println("Player current position is : "+position);
 	    }   
 	        
 	        
